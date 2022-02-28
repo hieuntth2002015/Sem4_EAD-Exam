@@ -1,17 +1,385 @@
-/*id*/
-#my-table-data {
+@font-face {
+    font-family: 'aslsicons2';
+    src: url('https://www.lendingkart.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot');
+    src: url('https://www.lendingkart.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot?#iefix') format('embedded-opentype'),
+    url('https://www.lendingkart.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff2') format('woff2'),
+    url('https://www.lendingkart.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff') format('woff'),
+    url('https://www.lendingkart.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.ttf') format('truetype'),
+    url('https://www.lendingkart.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.svg#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label {
+    font-size: 0px !important;
+    color: rgba(0, 0, 0, 0);
+}
+div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label:after {
+    font-size: 11px !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+div[id*='ajaxsearchlite'].wpdreams_asl_container {
+    width: 80%;
+    margin: 0px 0px 0px 0px;
+}
+div[id*='ajaxsearchliteres'].wpdreams_asl_results div.resdrg span.highlighted {
+    font-weight: bold;
+    color: rgb(41, 78, 155);
+    background-color: rgba(241, 241, 241, 0);
+}
+div[id*='ajaxsearchliteres'].wpdreams_asl_results .results div.asl_image {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.asl_r .results {
+    max-height: none;
 }
 
-/*class*/
-.w3-table-all {
-
+.asl_m, .asl_m .probox {
+    background-color: rgba(48, 48, 48, 0.04) !important;
+    background-image: none !important;
+    -webkit-background-image: none !important;
+    -ms-background-image: none !important;
 }
 
-/*tag name*/
-td {
-
+.asl_m .probox svg {
+    fill: rgb(99, 97, 97) !important;
+}
+.asl_m .probox .innericon {
+    background-color: rgb(99, 97, 97) !important;
+    background-image: none !important;
+    -webkit-background-image: none !important;
+    -ms-background-image: none !important;
 }
 
-p .danger {
-    color: red;
+div.asl_m.asl_w {
+    border:1px solid rgb(239, 239, 239) !important;border-radius:20px 20px 20px 20px !important;
+    box-shadow: none !important;
 }
+div.asl_m.asl_w .probox {border: none !important;}
+
+div.asl_r.asl_w.vertical .results .item::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #D8D8D8;
+}
+div.asl_r.asl_w.vertical .results .item.asl_last_item::after {
+    display: none;
+}
+.prosettings {
+    display: none;
+}
+#ajaxsearchlite1 .probox .proinput input, div.asl_w .probox .proinput input {
+    font-size: 14px !important;
+}
+.asl_m .probox .innericon {
+    background: #f7f8fb!important;
+    border-radius: 50%;
+    border: transparent;
+}
+div#ajaxsearchlite1 {
+    float: right;
+}
+.proinput {
+    width: 5px !important;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+    transition: width .6s !important;
+    float: right;
+
+}
+.proinput.active{
+    width: 484px !important;
+    padding-left: 18px !important;
+}
+.asl_m .probox svg {
+    fill: #676868 !important;
+    width: 16px !IMPORTANT;
+    opacity: 0.7;
+}
+div.asl_w .probox .promagnifier{
+    height: 32px;
+    width: 32px;
+}
+#ajaxsearchlite1 .probox, div.asl_w .probox{
+    height: 32px;
+}
+.proclose svg {
+    background: transparent !important;
+    opacity: inherit;
+    box-shadow: inherit !important;
+    padding: 0 !important;
+    top: 56% !important;
+}
+div.asl_r .results .item .asl_content h3, div.asl_r .results .item .asl_content h3 a{
+    color: #303030 !important;
+    font-size: 13px!important;
+    font-family: 'Nunito Sans', sans-serif !important;
+
+}
+p.asl_desc {
+    display: none;
+}
+div.asl_r.vertical {
+    padding: 20px 15px !important;
+    border-radius: 5px !important;
+}
+.asl_content {
+    position: relative;
+}
+div.asl_r .results .item .asl_content {
+    padding-left: 12px;
+}
+div.asl_r.vertical .results .asl_spacer {
+    background: none repeat scroll 0 0 #efefef;
+}
+div.asl_w .probox .promagnifier{
+    box-shadow: inherit;
+}
+@media only screen and (max-width: 767px){
+    .proinput.active{
+        width: 200px !important;
+
+    }
+    #ajaxsearchlite1 .probox .proinput input, div.asl_w .probox .proinput input {
+        font-size: 14px !important;
+        padding-left: 14px !important;
+    }
+
+}</style> <script>if ( typeof _ASL !== "undefined" && _ASL !== null && typeof _ASL.initialize !== "undefined" ) {
+    _ASL.initialize();
+}</script> <link rel="icon" href="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_32,h_32/https://www.lendingkart.com/wp-content/uploads/2021/03/cropped-Group-13-32x32.png" sizes="32x32"><link rel="icon" href="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_192,h_192/https://www.lendingkart.com/wp-content/uploads/2021/03/cropped-Group-13-192x192.png" sizes="192x192"><link rel="apple-touch-icon" href="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_180,h_180/https://www.lendingkart.com/wp-content/uploads/2021/03/cropped-Group-13-180x180.png"><meta name="msapplication-TileImage" content="https://www.lendingkart.com/wp-content/uploads/2021/03/cropped-Group-13-270x270.png"><style id="wp-custom-css">body {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             overflow-x: hidden !important;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         }
+.navbar.lktopnav .navbar-nav li a{
+    text-transform: initial;
+}
+.gur_cont_single li {
+    list-style-type: initial !important;
+}
+
+body.home .entry-content {
+    margin: 0;
+}
+footer.page-footer .footer-copyright p{
+    text-align:center;
+}
+label.screen-reader-text {
+    padding: 10px 15px;
+}
+.product-wrapper ol li {
+    font-size: 16px;
+    text-align: justify;
+    font-weight: normal;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    position: relative;
+}
+#wpcomm .wc-comment-right .wc-comment-text, #wpcomm .wc-comment-right .wc-comment-text * {position:inherit;top:0;}
+
+ul#menu-footer-social li {
+    display: inline-block;
+}
+
+#menu-footer-social li a {
+    display: block;
+    text-align: center;
+}
+
+.gur_thumb_single img {
+    width: 100%;
+    height: auto;
+}
+
+.social-sharing.ss-social-sharing a {
+    border-radius: 50%;
+    text-align: center;
+}
+
+.card {
+    border: 0px !important;
+}
+
+.gur_cont_single p {
+    color: #303030;
+    font-family: "Open Sans";
+    font-size: 16px;
+    text-align: justify;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+#FAQs .card .card-header a:hover {
+    text-decoration: none;
+}
+.cust_img img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+footer.page-footer .container ul{
+    border-bottom:0;
+    padding:0;
+}
+@media(min-width:768px) {
+    .page-id-6472 .mediashow {
+        display: block;
+    }
+    .ds-mobile-cta {
+        display: none !important;
+    }
+}
+
+
+@media(min-width:320px) and (max-width:767px) {
+    .wpd-custom-field.wpd-cf-rating {
+        display: block;
+        float: right;
+        width: 50%;
+        position: relative;
+        top: 10px;
+    }
+    #header.wcl div#lknav{padding:0 !important}
+
+    #header.wcl .navbar .btn.btn-ce-mobile{margin-right:10px;}
+
+    #top-banner{margin-top:0;}
+    span.call-timing,
+    .footer-second #nav_menu-15,
+    .footer-second #custom_html-16,
+    .footer-second #nav_menu-16,
+    .footer-fourth #custom_html-20,
+    .footer-second #nav_menu-17,
+    .footer-third #custom_html-15 {
+        display: block;
+    }
+    .footer-third #nav_menu-13,
+    #nav_menu-20,
+    #custom_html-19,
+    #nav_menu-19,
+    .footer-fifth div#custom_html-18,
+    .footer-fifth div#nav_menu-18 {
+        display: none;
+    }
+    .footer-fourth div#nav_menu-14 {
+        display: none;
+    }
+    #header.wcl .navbar{margin-bottom:0;}
+    .blog_menu_mobile #mega-menu-wrap-blog-menu #mega-menu-blog-menu{
+        overflow-x:hidden;
+    }
+}
+
+@media(min-width:769px) {
+
+    .footer-second #nav_menu-15,
+    .footer-second #custom_html-16,
+    .footer-second #nav_menu-16,
+    .footer-fourth #custom_html-20,
+    .footer-second #nav_menu-17,
+    .footer-fourth div#custom_html-15 {
+        display: none;
+    }
+}
+.product-wrapper h4, .product-wrapper a, .product-wrapper p, .product-wrapper, .product-wrapper ul li, .product-wrapper ol li {
+    margin-top: 16px;
+}
+body.page-id-6216 .ds-mobile-cta,
+body.page-id-7620 .ds-mobile-cta,
+body.page-id-6132 .ds-mobile-cta,
+body.page-id-6131 .ds-mobile-cta,
+body.page-id-8713 .ds-mobile-cta,
+body.page-id-7694 .ds-mobile-cta,
+body.page-id-6194 .ds-mobile-cta,
+body.page-id-9554 .ds-mobile-cta,
+body.page-id-6190 .ds-mobile-cta,
+body.page-id-6216 .ds-mobile-cta {  display: none !important;
+}
+.product-wrapper .product-btn a {
+    margin-top: 0px;
+}
+
+#team-mem .col-sm-3.techCol {
+    margin-bottom: 20px;
+}
+.container-name .input-title.gst-rate {
+    margin-top: 16px;
+}
+.product-wrapper .amount-inr {
+    margin-top: auto;
+}
+.product-wrapper .section.wcl-faqs a,.product-wrapper .city-tabs a {
+    margin-top: 0;
+}
+.page-id-8713 #top-banner .container {
+    height: auto;
+}
+.Newsletter-block input.es_subscription_form_submit{top:64px;text-indent: inherit;width:auto;font-weight:bold;}
+.elementor-section-wrap .container .container {
+    width: 100%;
+    padding: 0;
+}
+.lkcarousel .carousel-indicators{z-index:9;}
+footer.page-footer{z-index:1;}
+body.home .col-md-12.copyright {
+    padding: 0;
+}
+.lang-icon{
+    background: #f3f1f1;
+}
+.article-listing .gur_cont_single p{
+    margin:10px 0;
+}
+.policy-pages p,.policy-pages li,.policy-pages span,.policy-pages a{font-size:14px;}
+
+.page-id-12006 .ds-mobile-cta, .page-id-12143 .ds-mobile-cta, .page-id-12371 .ds-mobile-cta, .page-id-12407 .ds-mobile-cta, .page-id-12442 .ds-mobile-cta,
+.page-id-12648 .ds-mobile-cta
+{
+    display: none !important;
+}
+.gurouter .gur_cont_single strong {
+    font-size: 15px;}
+.lang-icon{margin-left:0%;}
+body.page-template-default.page.page-id-4684 .lang-icon.blog-lang-icon { display: none; }
+.Newsletter-block .email_posts_subscribers p input {
+    color: #333333;
+}
+.wpml-ls-statics-shortcode_actions.wpml-ls.wpml-ls-legacy-list-horizontal {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 1920px) {
+    .lk-intro {
+
+        height: 765px;
+        background-position: 10px 65px;
+        background-size: cover;
+    }
+}
+@media only screen and (max-width: 991px){
+    .view.parallax {
+        background-position-x: center !important;
+    }
+    .lk-intro{
+        background-size:cover;
+    }
+    .lk-intro .applyNow .btn{
+        margin-left:0;
+    }
+    .img-wcl-banner img {
+        max-width: 100%;
+    }
+}
+#header.wcl .navbar .navbar-nav li a i.fa.fa.fa-phone:before,#wpdcom .wpd-item-wrap,#header.wcl #lknav .dropdown-toggle::after{display:none;}
+#wpdcom{margin:0;}
+#sidebar-right .blog-lk-form h2.widget-title, .product-sidebar .blog-lk-form h2.widget-title,.single-post #sidebar-right .widget .widget-title{
+    border:0;
