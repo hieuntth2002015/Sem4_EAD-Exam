@@ -38,6 +38,6 @@ function drawChart() {
     chart.draw(data, options);
 
     var xmlHttpRequest = new xmlHttpRequest();
-    xmlHttpRequest.open('post', 'http://localhost:8080/api/v1', false);
+    xmlHttpRequest.open('post', 'http://localhost:8080/v1/amounts', false);
     xmlHttpRequest.send();
 }
