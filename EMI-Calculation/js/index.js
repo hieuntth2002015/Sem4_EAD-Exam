@@ -36,4 +36,8 @@ function drawChart() {
     oldChart.innerHTML = "";
     var chart = new google.visualization.PieChart(oldChart);
     chart.draw(data, options);
+
+    var xmlHttpRequest = new xmlHttpRequest();
+    xmlHttpRequest.open('post', 'http://localhost:8080/api/v1', false);
+    xmlHttpRequest.send();
 }
